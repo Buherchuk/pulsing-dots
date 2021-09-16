@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    display: flex;
+}
+
+.steelblue, .tomato, .seagreen, .hotpinc, .lightgreen, .orange, .yellowgreen, .rebeccapurple{
+    /* animation-name: pulsing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+} 
+
+/* colors */
+.steelblue{
+    background-color: rgba(70, 130, 180, 1);
+    animation-name: pulsing-steelblue;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.tomato{
+    background-color: rgba(255, 99, 71, 1);
+    animation-name: pulsing-tomato;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.seagreen{
+    background-color: rgba(46, 139, 87, 1);
+    animation-name: pulsing-seagreen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.hotpinc{
+    background-color: rgba(255, 105, 180, 1);
+    animation-name: pulsing-hotpinc;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.lightgreen{
+    background-color: rgba(144, 238, 144, 1);
+    animation-name: pulsing-lightgreen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.orange{
+    background-color: rgba(255, 166, 0, 1);
+    animation-name: pulsing-orange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.yellowgreen{
+    background-color: rgba(154, 205, 50, 1);
+    animation-name: pulsing-yellowgreen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.rebeccapurple{
+    background-color: rgba(102, 51, 153, 1);
+    animation-name: pulsing-rebeccapurple;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/* colors */
+   
+@keyframes pulsing-steelblue {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(70, 130, 180, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(70, 130, 180, 0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+@keyframes pulsing-tomato {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 99, 71, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 99, 71, 0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+@keyframes pulsing-seagreen {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(46, 139, 87, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(46, 139, 87, 0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+@keyframes pulsing-hotpinc {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 105, 180, 0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+@keyframes pulsing-lightgreen {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(144, 238, 144, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(144, 238, 144, 0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+@keyframes pulsing-orange {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(154, 205, 50, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(154, 205, 50, 0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+@keyframes pulsing-yellowgreen {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(154, 205, 50, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(154, 205, 50, 0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+@keyframes pulsing-rebeccapurple {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(102, 51, 153, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(102, 51, 153, 0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}

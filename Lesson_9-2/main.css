@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.earth{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation-name: index;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url('https://cdn.freelogovectors.net/wp-content/uploads/2017/05/Earth-Transparent.png');
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+.radius{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    /* border: 4px dotted gray; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(
+        80deg
+        ) rotateY(
+        -10deg
+        ) rotateZ(
+        0deg
+        );
+}
+.circle{
+    border-radius: 50%;
+    background-image: url('http://assets.stickpng.com/images/58f9fd7b0ed2bdaf7c128329.png');
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation-name: run;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform: rotateZ(0deg) translate(300px) rotateY(90deg) rotateX(90deg);
+}
+@keyframes index{
+    0%{
+        z-index: 0;
+    }
+    25%{
+        z-index: 0;
+    }
+    50%{
+        z-index: 0;
+    }
+    75%{
+        z-index: 10;
+    }
+    100%{
+        z-index: 10;
+    }
+}
+@keyframes run{
+    0%{
+        transform: rotateZ(0deg) translate(300px) rotateY(90deg) rotateX(90deg);
+    }
+    25%{
+        transform: rotateZ(90deg) translate(300px) rotateY(90deg) rotateX(180deg);
+    }
+    50%{
+        transform: rotateZ(180deg) translate(300px) rotateY(90deg) rotateX(270deg);
+    }
+    75%{
+        transform: rotateZ(270deg) translate(300px) rotateY(90deg) rotateX(360deg);
+    }
+    100%{
+        transform: rotateZ(360deg) translate(300px) rotateY(90deg) rotateX(450deg);
+    }
+}
